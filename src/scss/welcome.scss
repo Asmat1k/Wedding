@@ -1,0 +1,67 @@
+.welcome-block {
+  font-family: "Georgia";
+  max-width: 1200px;
+  margin: 0 auto;
+  .block__content {
+    display: flex;
+    justify-content: space-between;
+    .block__info {
+      min-height: 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-self: center;
+      row-gap: 40px;
+      .block__title {
+        font-family: 'TT Ricordi Trial';
+        color: #00592e;
+        font-size: 50px;
+        font-weight: 500;
+      }
+      .block__subtitle {
+        font-family: Tahoma;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        color: #00592e;
+        max-width: 400px;
+        font-size: 20px;
+        .block__text-two {
+          .data {
+            display: block;
+            margin-top: 30px;
+            font-family: 'Suithame', sans-serif;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+    .block__img {
+      position: relative;
+      max-width: 700px;
+      max-height: 700px;
+      .block__img_text {
+        font-family: 'TT Ricordi Trial';
+        font-size: 90px;
+        line-height: 80px;
+        font-weight: 100;
+        color: #00592e;
+        text-align: center;
+        position: absolute;
+        left: 210px;
+        bottom: 230px;
+        .first-name {
+          margin-left: -30px;
+        }
+        .small-text {
+          margin-left: 60px;
+          font-size: 35px;
+        }
+      }
+      & img {
+        max-width: 700px;
+        max-height: 700px;
+      }
+    }
+  }
+}

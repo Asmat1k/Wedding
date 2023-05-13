@@ -1,0 +1,17 @@
+@import "nullstyle.scss";
+
+@import "header.scss";
+@import "welcome.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/tt-ricordi-trial');
+@import url('https://fonts.cdnfonts.com/css/suithame');
+
+body {
+  background: white;
+}
+
+.welcome {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(168,208,192,1) 50%);
+}
