@@ -1,14 +1,28 @@
 @import "nullstyle.scss";
 
-@import "header.scss";
-@import "welcome.scss";
-
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/tt-ricordi-trial');
 @import url('https://fonts.cdnfonts.com/css/suithame');
 
+@import "header.scss";
+@import "welcome.scss";
+@import "wishes.scss";
+@import "map.scss";
+@import "form.scss";
+@import "footer.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: white;
+}
+
+.block {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .welcome {

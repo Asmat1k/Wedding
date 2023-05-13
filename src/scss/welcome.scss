@@ -1,7 +1,5 @@
 .welcome-block {
   font-family: "Georgia";
-  max-width: 1200px;
-  margin: 0 auto;
   .block__content {
     display: flex;
     justify-content: space-between;
@@ -19,7 +17,7 @@
         font-weight: 500;
       }
       .block__subtitle {
-        font-family: Tahoma;
+        font-family: Georgia;
         display: flex;
         flex-direction: column;
         row-gap: 30px;

@@ -1,0 +1,72 @@
+.wishes-block {
+  display: flex;
+  justify-content: space-between;
+  .block__content-color {
+    max-width: 500px;
+    text-align: center;
+    .block__title {
+      color: #00592e;
+      font-family: "TT Ricordi Trial";
+      font-size: 35px;
+      margin-bottom: 60px;
+    }
+    .block__colors {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+      column-gap: 30px;
+      .block_colored {
+        min-width: 100px;
+        min-height: 50px;
+        border: 1px solid black;
+      }
+      .color-1 {
+        background-color: #E3DBD3;
+      }
+      .color-2 {
+        background-color: #9CB2A5;
+      }
+      .color-3 {
+        background-color: #8BA4B3;
+      }
+      .color-4 {
+        background-color: #C8B7C9;
+      }
+      .color-5 {
+        background-color: #9D7982;
+      }
+    }
+  }
+  .block__content {
+    max-width: 700px;
+    .block__info {
+      text-align: center;
+      color: #00592e;
+      .block__title {
+        font-family: "TT Ricordi Trial";
+        font-size: 35px;
+        margin-bottom: 60px;
+      }
+      .block__list {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        .block__item {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 20px;
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background-color: #00592e;
+            border-radius: 10px;
+            margin: 0 5px 5px 0;
+          }
+        }
+      }
+    }
+  }
+}
