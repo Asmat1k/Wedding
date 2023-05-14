@@ -5,17 +5,22 @@
 @import url('https://fonts.cdnfonts.com/css/suithame');
 
 @import "header.scss";
+
 @import "welcome.scss";
 @import "wishes.scss";
+@import "care.scss";
 @import "map.scss";
 @import "form.scss";
+
 @import "footer.scss";
+
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  overflow-x: hidden;
   background: white;
 }
 
@@ -28,4 +33,17 @@ body {
 .welcome {
   background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(168,208,192,1) 50%);
+}
+
+@media (max-width: 980px) {
+  .block {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 980px) {
+  .block {
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
 }
