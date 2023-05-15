@@ -1,0 +1,38 @@
+.map-block {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  .block__info {
+    text-align: center;
+    .block__title {
+      font-family: "TT Ricordi Trial";
+      font-size: 50px;
+      font-weight: 500;
+      margin-bottom: 60px;
+    }
+    .block__position {
+      max-width: 1200px;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .map-block {
+    .block__info {
+      .block__title {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .map-block {
+    .block__info {
+      .block__title {
+        font-size: 20px;
+      }
+    }
+  }
+}

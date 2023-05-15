@@ -1,0 +1,280 @@
+.welcome-block {
+  font-family: "Georgia";
+  .block__content {
+    display: flex;
+    justify-content: space-between;
+    .block__info {
+      min-height: 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-self: center;
+      row-gap: 40px;
+      .block__title {
+        font-family: 'TT Ricordi Trial';
+        color: #00592e;
+        font-size: 50px;
+        font-weight: 500;
+      }
+      .block__subtitle {
+        font-family: Georgia;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        color: #00592e;
+        max-width: 400px;
+        font-size: 20px;
+        .block__text-two {
+          .data {
+            display: block;
+            margin-top: 30px;
+            font-family: 'Suithame', sans-serif;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+    .block__img {
+      position: relative;
+      max-width: 700px;
+      max-height: 700px;
+      .block__img_text {
+        user-select: none; 
+        font-family: 'TT Ricordi Trial';
+        font-size: 90px;
+        line-height: 80px;
+        font-weight: 100;
+        color: #00592e;
+        text-align: center;
+        position: absolute;
+        left: 210px;
+        bottom: 230px;
+        .first-name {
+          margin-left: -30px;
+        }
+        .small-text {
+          margin-left: 60px;
+          font-size: 35px;
+        }
+      }
+      & img {
+        max-width: 700px;
+        max-height: 700px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1250px) {
+  .welcome-block {
+    .block__content {
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .welcome-block {
+    .block__content {
+      justify-content: space-evenly;
+      .block__img {
+        max-width: 500px;
+        max-height: 500px;
+        & img {
+          max-width: 500px;
+          max-height: 500px;
+        }
+        .block__img_text {
+          font-size: 70px;
+          line-height: 60px;
+          left: 110px;
+          bottom: 160px;
+          .first-name {
+            margin-left: 0;
+          }
+          .second-name {
+            margin-left: 30px;
+          }
+          .small-text {
+            margin-left: 0;
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .welcome-block {
+    .block__content {
+      justify-content: space-evenly;
+      .block__info {
+        .block__title {
+          font-size: 40px;
+        }
+        .block__subtitle {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .welcome-block {
+    .block__content {
+      justify-content: space-evenly;
+      .block__info {
+        row-gap: 15px;
+        .block__title {
+          font-size: 30px;
+        }
+        .block__subtitle {
+          font-size: 12px;
+          row-gap: 15px;
+          .block__text-two {
+            .data {
+              margin-top: 15px;
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      .block__img {
+        max-width: 300px;
+        max-height: 300px;
+        & img {
+          max-width: 300px;
+          max-height: 300px;
+        }
+        .block__img_text {
+          font-size: 40px;
+          line-height: 40px;
+          left: 60px;
+          bottom: 85px;
+          .first-name {
+            margin-left: 0;
+          }
+          .second-name {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .welcome-block {
+    .block__content {
+      justify-content: space-evenly;
+      .block__info {
+        row-gap: 10px;
+        .block__title {
+          font-size: 20px;
+        }
+        .block__subtitle {
+          font-size: 10px;
+          row-gap: 10px;
+          .block__text-two {
+            .data {
+              margin-top: 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .block__img {
+        max-width: 200px;
+        max-height: 200px;
+        & img {
+          max-width: 200px;
+          max-height: 200px;
+        }
+        .block__img_text {
+          font-size: 25px;
+          line-height: 25px;
+          left: 35px;
+          bottom: 60px;
+          .first-name {
+            margin-left: 0;
+          }
+          .second-name {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .welcome-block {
+    .block__content {
+      justify-content: space-evenly;
+      .block__info {
+        row-gap: 10px;
+        .block__title {
+          font-size: 20px;
+        }
+        .block__subtitle {
+          font-size: 9px;
+          row-gap: 10px;
+          .block__text-two {
+            .data {
+              margin-top: 10px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .welcome-block {
+    .block__content {
+      justify-content: space-evenly;
+      .block__info {
+        row-gap: 10px;
+        .block__title {
+          font-size: 15px;
+          white-space: nowrap;
+        }
+        .block__subtitle {
+          font-size: 10px;
+          letter-spacing: 0;
+          row-gap: 5px;
+          .block__text-two {
+            .data {
+              margin-top: 10px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .block__img {
+        max-width: 150px;
+        max-height: 150px;
+        & img {
+          max-width: 150px;
+          max-height: 150px;
+        }
+        .block__img_text {
+          font-size: 18px;
+          line-height: 20px;
+          left: 27px;
+          bottom: 45px;
+          .second-name {
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

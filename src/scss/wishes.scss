@@ -1,0 +1,281 @@
+.wishes-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .block__content {
+    cursor: pointer;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    max-width: 300px;
+    padding: 15px;
+    height: 100%;
+    transition: .5s;
+    .block__colors {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: start;
+      row-gap: 15px;
+      .block__color {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        .block_colored {
+          min-width: 50px;
+          min-height: 50px;
+          max-width: 50px;
+          max-height: 50px;
+          border-radius: 50%;
+        }
+        .block__color_name {
+          text-align: left;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 15px;
+        }
+        .color-1 {
+          background-color: #E3DBD3;
+        }
+        .color-2 {
+          background-color: #9CB2A5;
+        }
+        .color-3 {
+          background-color: #8BA4B3;
+        }
+        .color-4 {
+          background-color: #C8B7C9;
+        } 
+      }
+    }
+    .block__info {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: #00592e;
+      .block__title {
+        font-family: "TT Ricordi Trial";
+        font-size: 30px;
+        margin-bottom: 60px;
+      }
+      .block__list {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        .block__item {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 20px;
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background-color: #00592e;
+            border-radius: 10px;
+            margin: 0 5px 5px 0;
+          }
+        }
+      }
+      .shedule__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        .shedule__item {
+          font-size: 18px;
+          text-align: left;
+          .time {
+            font-family: 'Suithame', sans-serif;
+          }
+        }
+      }
+      .block__text {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 1px;
+      }
+    }
+    &:nth-child(2) {
+      max-width: 400px;
+    }
+    // &:hover {
+    //   transform: scale(1.03);
+    //   transition: .5s;
+    // }
+  }
+}
+
+.close-look {
+  transform: scale(1.05);
+  box-shadow: 4px 6px 40px 2px #016d392d;
+  transition: .5s;
+}
+
+@media (max-width: 1060px) {
+  .wishes-block {
+    .block__content {
+      max-width: 250px;
+      .block__info {
+        .block__title {
+          margin-bottom: 20px;
+        }
+        .block__list {
+          row-gap: 15px;
+          .block__item {
+            font-size: 15px;
+          }
+        }
+        .shedule__list {
+          row-gap: 15px;
+          .shedule__item {
+            font-size: 15px;
+            text-align: left;
+            .time {
+              font-family: 'Suithame', sans-serif;
+            }
+          }
+        }
+        .block__text {
+          margin-top: 15px;
+          font-size: 15px;
+          line-height: 15px;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .wishes-block {
+    .block__content {
+      max-width: 250px;
+      .block__info {
+        .block__title {
+          font-size: 30px;
+        }
+        .block__colors {
+          .block__color {
+            .block_colored {
+              min-width: 30px;
+              min-height: 30px;
+              max-width: 30px;
+              max-height: 30px;
+              border-radius: 50%;
+            }
+            .block__color_name {
+              font-size: 12px;
+            }
+          }
+        }
+        .block__list {
+          max-width: 300px;
+          .block__item {
+            font-size: 12px;
+          }
+        }
+        .shedule__list {
+          row-gap: 15px;
+          .shedule__item {
+            font-size: 12px;
+          }
+        }
+        .block__flex {
+          .block__text {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .wishes-block {
+    gap: 15px;
+    .block__content {
+      .block__info {
+        .block__list {
+          max-width: 400px;
+          .block__item {
+            &::before {
+              margin: 0 5px 2px 0;
+            }
+          }
+        }
+        .block__flex {
+          max-width: 600px;
+          display: flex;
+          .block__text {
+            text-align: left;
+            max-width: 200px;
+            margin: 0 0 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 693px) {
+  .wishes-block {
+    gap: 15px;
+    .block__content {
+      max-width: 355px;
+      .block__info {
+        .block__title {
+          font-size: 30px;
+        }
+        .block__list {
+          max-width: 400px;
+          .block__item {
+            &::before {
+              margin: 0 5px 2px 0;
+            }
+          }
+        }
+        .block__flex {
+          max-width: 600px;
+          display: flex;
+          .block__text {
+            text-align: left;
+            max-width: 200px;
+            margin: 0 0 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .wishes-block {
+    .block__content {
+      .block__info {
+        .block__title {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .wishes-block {
+    .block__content {
+      .block__info {
+        .block__flex {
+          max-width: 600px;
+          display: flex;
+          flex-direction: column;
+          .block__text {
+            text-align: center;
+            max-width: 200px;
+            margin: 15px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}

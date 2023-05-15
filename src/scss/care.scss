@@ -1,0 +1,88 @@
+.care-block {
+  .block__info {
+    color: #00592e;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    row-gap: 40px;
+    .block__title {
+      font-family: 'TT Ricordi Trial';
+      font-size: 35px;
+    }
+    .block__text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      font-size: 3vh;
+      .block__list {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .block__item {
+          cursor: pointer;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background-color: #00592e;
+            border-radius: 10px;
+            margin: 0 5px 2px 0;
+          }
+          transition: .5s;
+          &:hover {
+            margin-left: 10px;
+            transition: .5s;
+          }
+          &:active {
+            transform: scale(1.05);
+            transition: .5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .care-block {
+    .block__info {
+      row-gap: 30px;
+      .block__title {
+        font-size: 30px;
+      }
+      .block__text {
+        font-size: 15px;
+        .block__list {
+          font-size: 13px;
+          row-gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .care-block {
+    .block__info {
+      row-gap: 20px;
+      .block__title {
+        font-size: 20px;
+      }
+      .block__text {
+        font-size: 13px;
+        .block__list {
+          font-size: 13px;
+          row-gap: 10px;
+        }
+      }
+    }
+  }
+}
+
