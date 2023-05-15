@@ -15,7 +15,7 @@
       display: flex;
       flex-direction: column;
       row-gap: 20px;
-      font-size: 20px;
+      font-size: 3vh;
       .block__list {
         max-width: 500px;
         margin: 0 auto;
@@ -26,7 +26,6 @@
         .block__item {
           cursor: pointer;
           font-family: Georgia, 'Times New Roman', Times, serif;
-          font-size: 20px;
           &::before {
             content: '';
             display: inline-block;
@@ -50,3 +49,40 @@
     }
   }
 }
+
+@media (max-width: 990px) {
+  .care-block {
+    .block__info {
+      row-gap: 30px;
+      .block__title {
+        font-size: 30px;
+      }
+      .block__text {
+        font-size: 15px;
+        .block__list {
+          font-size: 13px;
+          row-gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .care-block {
+    .block__info {
+      row-gap: 20px;
+      .block__title {
+        font-size: 20px;
+      }
+      .block__text {
+        font-size: 13px;
+        .block__list {
+          font-size: 13px;
+          row-gap: 10px;
+        }
+      }
+    }
+  }
+}
+

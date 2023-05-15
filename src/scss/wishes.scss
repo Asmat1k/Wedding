@@ -3,7 +3,13 @@
   justify-content: space-around;
   flex-wrap: wrap;
   .block__content {
+    cursor: pointer;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 8px;
     max-width: 300px;
+    padding: 15px;
+    height: 100%;
+    transition: .5s;
     .block__colors {
       display: flex;
       flex-wrap: wrap;
@@ -92,9 +98,18 @@
     }
     &:nth-child(2) {
       max-width: 400px;
-      transform: scale(1.1);
     }
+    // &:hover {
+    //   transform: scale(1.03);
+    //   transition: .5s;
+    // }
   }
+}
+
+.close-look {
+  transform: scale(1.05);
+  box-shadow: 4px 6px 40px 2px #016d392d;
+  transition: .5s;
 }
 
 @media (max-width: 1060px) {
@@ -171,9 +186,6 @@
             font-size: 12px;
           }
         }
-      }
-      &:nth-child(2) {
-        transform: scale(1.0);
       }
     }
   }

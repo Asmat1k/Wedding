@@ -15,3 +15,24 @@
     }
   }
 }
+
+@media (max-width: 990px) {
+  .map-block {
+    .block__info {
+      .block__title {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .map-block {
+    .block__info {
+      .block__title {
+        font-size: 20px;
+      }
+    }
+  }
+}

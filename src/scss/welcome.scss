@@ -39,6 +39,7 @@
       max-width: 700px;
       max-height: 700px;
       .block__img_text {
+        user-select: none; 
         font-family: 'TT Ricordi Trial';
         font-size: 90px;
         line-height: 80px;
@@ -226,6 +227,49 @@
               margin-top: 10px;
               font-size: 15px;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .welcome-block {
+    .block__content {
+      justify-content: space-evenly;
+      .block__info {
+        row-gap: 10px;
+        .block__title {
+          font-size: 15px;
+          white-space: nowrap;
+        }
+        .block__subtitle {
+          font-size: 10px;
+          letter-spacing: 0;
+          row-gap: 5px;
+          .block__text-two {
+            .data {
+              margin-top: 10px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .block__img {
+        max-width: 150px;
+        max-height: 150px;
+        & img {
+          max-width: 150px;
+          max-height: 150px;
+        }
+        .block__img_text {
+          font-size: 18px;
+          line-height: 20px;
+          left: 27px;
+          bottom: 45px;
+          .second-name {
+            margin-left: 25px;
           }
         }
       }
