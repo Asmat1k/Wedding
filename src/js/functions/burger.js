@@ -4,7 +4,8 @@ const shadow = document.querySelector('.shadow');
 
 export function burger() {
     window.addEventListener('click', function(event){
-        if(event.target.classList.contains('menu__line'))
+        console.log();
+        if(event.target.parentNode.classList.contains('menu__icon'))
             open(menuBtn,menu);
         document.body.addEventListener('click', function(eventIN) {
             if(eventIN.target.classList.contains('header-nav__link') || !eventIN.target.classList.contains('header__menu'))

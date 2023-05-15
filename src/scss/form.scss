@@ -207,6 +207,35 @@
         .form__input {
           min-height: 50px;
           width: 100%;
+          &::placeholder {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  } 
+}
+
+@media (max-width: 470px) {
+  .form-block {
+    display: block;
+    max-width: 100%;
+    .form__body {
+      max-width: 80%;
+      margin: 0 auto;
+      .form__title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      .form__item {
+        margin-bottom: 20px;
+        .form__input {
+          min-height: 50px;
+          width: 100%;
+          &::placeholder {
+            font-size: 15px;
+          }
         }
       }
     }

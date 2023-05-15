@@ -589,13 +589,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 .wishes-block .block__content .block__colors .block__color .color-1 {
-  background-color: #E3DBD3;
+  background-color: #e4b98e;
 }
 .wishes-block .block__content .block__colors .block__color .color-2 {
   background-color: #9CB2A5;
 }
 .wishes-block .block__content .block__colors .block__color .color-3 {
-  background-color: #8BA4B3;
+  background-color: #8cc7e9;
 }
 .wishes-block .block__content .block__colors .block__color .color-4 {
   background-color: #C8B7C9;
@@ -1099,6 +1099,34 @@ h1, h2, h3, h4, h5, h6 {
   .form-block .form__body .form__item .form__input {
     min-height: 50px;
     width: 100%;
+  }
+  .form-block .form__body .form__item .form__input::placeholder {
+    font-size: 15px;
+  }
+}
+@media (max-width: 470px) {
+  .form-block {
+    display: block;
+    max-width: 100%;
+  }
+  .form-block .form__body {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .form-block .form__body .form__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .form-block .form__body .form__item {
+    margin-bottom: 20px;
+  }
+  .form-block .form__body .form__item .form__input {
+    min-height: 50px;
+    width: 100%;
+  }
+  .form-block .form__body .form__item .form__input::placeholder {
+    font-size: 15px;
   }
 }
 .footer {
