@@ -1,11 +1,40 @@
 .footer {
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 0 auto;
   padding-bottom: 50px;
   .footer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     text-align: center;
     font-size: 15px;
     color: gray;
     opacity: 0.8;
+    .footer__info {
+      .man:hover {
+        color: rgb(98, 105, 197);
+        transition: .2s;
+      }
+      .woman:hover {
+        color: rgb(219, 95, 182);
+        transition: .2s;
+      }
+    }
+    .footer__link {
+      cursor: pointer;
+      color: gray;
+      transition: .2s;
+      &:visited {
+        color: gray;
+      }
+    }
+    .footer-dev {
+      opacity: 0.6;
+      font-size: 9px;
+      .dev:hover {
+        color: rgb(0, 0, 0);
+        transition: .2s;
+      }
+    }
   }
 }

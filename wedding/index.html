@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230516130110">
     <title>Welcome</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="header-container">
         <div class="header-body">
             <div class="header-body__logo">
-                <img src="img/flower-header.png" alt="flower-header" class="header-body__img">
+                <picture><source srcset="img/flower-header.webp" type="image/webp"><img src="img/flower-header.png" alt="flower-header" class="header-body__img"></picture>
             </div>
             <div class="header__menu">
                 <nav class="header-nav">
@@ -50,7 +50,7 @@
       <div class="block__img_text">
         <span class="first-name"> Данил </span> <br> и <br> <span class="second-name">Софья</span> <br>
       </div>
-      <img src="img/flowers-1.png" class="img" alt="welcome-img">
+      <picture><source srcset="img/flowers-1.webp" type="image/webp"><img src="img/flowers-1.png" class="img" alt="welcome-img"></picture>
     </div>
   </div>  
 </div>
@@ -132,7 +132,7 @@
       Где будет проходить?
     </h2>
     <div class="block__position">
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1b09e8633f9c3d710726d26fac72322b1c498619cf0ec806323dfc02409b1bf2&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1b09e8633f9c3d710726d26fac72322b1c498619cf0ec806323dfc02409b1bf2&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true&_v=20230516130110"></script>
     </div>
   </div>
 </section>
@@ -140,65 +140,35 @@
     <section id="questions" class="form-block block">
   <div class="block__info">
     <div class="block__img">
-      <img src="img/flowers.png" alt="form-flower">
+      <picture><source srcset="img/flowers.webp" type="image/webp"><img src="img/flowers.png" alt="form-flower"></picture>
+    </div>
+    <div class="block__form">
+      <h2 class="block__title">
+        Опрос
+      </h2>
+      <div class="block__subtitle">
+        Ответьте пожалуйста на несколько вопросов, которые помогут нам спланировать этот день лучше:
+        <div class="block__subtitle_small">
+          1 гость - 1 форма
+        </div>
+      </div>
+      <div class="block__wrapper">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDT09VWbE2XBy_mhEIvUrSGDbR6HjWz_56mRaMYF7j0A6WGQ/viewform?embedded=true" max-width="90%" max-height="500" frameborder="0" marginheight="0" marginwidth="0" class="google-form">Загрузка…</iframe>
+      </div>
     </div>
   </div>
-  <form action="#" class="form__body">
-    <h3 class="form__title">Информация о госте:</h3>
-    <div class="form__item">
-      <label for="formQ1" class="form__label">ФИО*</label>
-      <input placeholder="Как вас зовут?"id="formQ1" type="text" name="guests" class="form__input">
-    </div>
-    <div class="form__item">
-      <label for="formQ2" class="form__label">Алкоголь*</label>
-      <input placeholder="Какой алкоголь предпочитаете?" id="formQ2" type="text" name="alcohol" class="form__input">
-    </div>
-    <div class="form__item">
-      <div class="form__label">Мясо или Рыба?</div>
-      <div class="options">
-        <div class="options__item">
-          <input id="formQ3-1" checked value="meat" type="radio" name="food" class="options__input">
-          <label for="formQ3-1" class="options__label"><span>Мясо</span></label>
-        </div>
-        <div class="options__item">
-          <input id="formQ3-3" value="fish" type="radio" name="food" class="options__input">
-          <label for="formQ3-3" class="options__label"><span>Рыба</span></label>
-        </div>
-      </div>
-    </div>
-    <div class="form__item">
-      <div class="form__label">Имеются ли у вас аллергии?</div>
-      <div class="options">
-        <div class="options__item">
-          <input id="formQ4-1" checked value="yes" type="radio" name="allergies" class="options__input">
-          <label for="formQ4-1" class="options__label"><span>Да</span></label>
-        </div>
-        <div class="options__item">
-          <input id="formQ4-2" value="no" type="radio" name="allergies" class="options__input">
-          <label for="formQ4-2" class="options__label"><span>Нет</span></label>
-        </div>
-      </div>
-    </div>
-    <div class="form__item">
-      <div class="form__label">Сможете ли вы присутствовать?</div>
-      <div class="options">
-        <div class="options__item">
-          <input id="formQ5-1" checked value="yes" type="radio" name="arrive" class="options__input">
-          <label for="formQ5-1" class="options__label"><span>Да</span></label>
-        </div>
-        <div class="options__item">
-          <input id="formQ6-2" value="no" type="radio" name="arrive" class="options__input">
-          <label for="formQ6-2" class="options__label"><span>Нет</span></label>
-        </div>
-      </div>
-    </div>
-    <button tyope="submit" class="form__button">Отправить</button>
-  </form>
 </section>
     <footer class="footer">
-  <div class="footer-container">С уважением, Данил и Софья</div>
+  <div class="footer-container">
+    <div class="footer__info">
+      С уважением, <a target="_blank" class="footer__link man" href="https://t.me//aks_offf">Данил</a> и <a target="_blank" class="footer__link woman" href="https://vk.com/sofiadobrova">Софья</a>
+    </div>
+    <div class="footer-dev">
+      dev by <a target="_blank" href="https://t.me//asmat1k" class="footer__link dev">@asmat1k</a> &lt;3
+    </div>
+  </div>
 </footer>
     <div class="shadow"></div>
-    <script src="js/app.min.js"></script>
+    <script src="js/app.min.js?_v=20230516130110"></script>
 </body>
 </html>
